@@ -32,5 +32,9 @@ def get_docs():
     return render_template('swaggerui.html')
 ```
 
-
 [Source](https://dev.to/sanjan/how-to-add-swagger-ui-to-a-plain-flask-api-project-with-an-openapi-specification-file-1jl8)
+
+
+## Hints:
+
+If you change your json config file but don't see any change in Swagger then hold down the Shift button and click the Reload button (because browsers cache some files, this will force it to update config file)
