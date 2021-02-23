@@ -7,6 +7,7 @@ Structure of your project now should be:
 ```
 .
 ├── static
+|   ├── hello_api.json
 │   ├── css
 │   │   └── swagger-ui.css
 │   ├── img
@@ -24,7 +25,9 @@ Structure of your project now should be:
 
 3. Once you are ready go to File->Convert and save as JSON. Example of such [json](https://github.com/sanjan/flask_swagger/blob/master/static/hello_api.json). Also Swagger Editor itself by default gives you a great example
 
-4. Return swaggerui.html with flask render_template in your preferred route, example:
+4. Put your generated json in `static/hello_api.json`
+
+5. Return swaggerui.html with flask render_template in your preferred route, example:
 ```
 @app.route('/api/docs')
 def get_docs():
@@ -34,6 +37,7 @@ def get_docs():
 
 [Source](https://dev.to/sanjan/how-to-add-swagger-ui-to-a-plain-flask-api-project-with-an-openapi-specification-file-1jl8)
 
+[Example](https://github.com/DmitriiDenisov/bank-bot/blob/master/static/swagger_config.json) of JSON for bank-bot
 
 ## Hints:
 
